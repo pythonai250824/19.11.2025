@@ -1,6 +1,7 @@
 from bson import ObjectId
 from pymongo import MongoClient  # pip install pymongo
 
+# you can use the docker-compose.yml (in this folder)
 client = MongoClient(host="localhost", port= 27018, username="mongoadmin", password="bdung")  # need mongo server running with this configuration
 
 def get_collection():
